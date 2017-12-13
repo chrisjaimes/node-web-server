@@ -35,6 +35,12 @@ hbs.registerHelper('screamIt', (text) => {
   return text.toUpperCase();
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+
+  });
+});
+
 app.get('/', (req, res) => {
     // res.send('<h1>Hello Express</h1>');
     res.render('home.hbs', {
